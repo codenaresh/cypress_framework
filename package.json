@@ -5,8 +5,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "test:regression": "npx cypress run --headed --browser chrome --spec 'cypress/e2e/**/*.cy.js'",
-    "test:dbfile":"npx cypress run --spec cypress/e2e/uI/database.cy.js",
-     "test:login":"npx cypress run --spec cypress/e2e/uI/login.cy.js",
+    "test:dbfile":"npx cypress run --spec cypress/e2e/UI/database.cy.js",
+     "test:login":"npx cypress run --spec cypress/e2e/UI/login.cy.js",
     "test:chrome": "cypress run --headed --browser chrome",
     "test:edge": "cypress run --headed --browser edge"
   },
