@@ -1,0 +1,32 @@
+[
+  {
+    "id": 101,
+    "salary": 2000,
+    "deaprtment": "java"
+  },
+  {
+    "id": 102,
+    "salary": 3000,
+    "deaprtment": "QA"
+  },
+  {
+    "id": 103,
+    "salary": 3000,
+    "deaprtment": "php"
+  },
+  {
+    "id": 104,
+    "salary": 4000,
+    "deaprtment": "dotnet"
+  },
+  {
+    "id": 105,
+    "salary": 5000,
+    "deaprtment": "js"
+  },
+  {
+    "id": 106,
+    "salary": 6000,
+    "deaprtment": "Auto"
+  }
+]

@@ -1,0 +1,5 @@
+export const loginLocators = {
+  username: 'input[name="username"]',
+  password: 'input[name="password"]',
+  loginBtn: 'button[type="submit"]'
+};
