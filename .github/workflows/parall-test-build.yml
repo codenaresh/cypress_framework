@@ -1,25 +1,19 @@
 name: parallal build
-on: push
+'on': push
 jobs:
   cypress-run1:
     runs-on: ubuntu-24.04
     steps:
       - name: Checkout
         uses: actions/checkout@v6
-      # Install npm dependencies, cache them correctly
-      # and run all Cypress tests
       - name: Cypress run
         uses: cypress-io/github-action@v6
-        with:
-         command:npm run test:dbfile
+        with: 'command:npm run test:dbfile'
   cypress-run2:
     runs-on: ubuntu-24.04
     steps:
       - name: Checkout
         uses: actions/checkout@v6
-      # Install npm dependencies, cache them correctly
-      # and run all Cypress tests
       - name: Cypress run
         uses: cypress-io/github-action@v6
-        with:
-         command:npm run test:login
+        with: 'command:npm run test:login'
