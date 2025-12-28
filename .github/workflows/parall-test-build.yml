@@ -1,44 +1,25 @@
-name: Parallel Test Build
-
-on:
-  push:
-    branches: [ main ]
-
+name: parallal build
+on: push
 jobs:
-  db-test-run:
+  cypress-run1:
     runs-on: ubuntu-24.04
-
     steps:
-      - uses: actions/checkout@v4
-
-      - name: Setup Node.js
-        uses: actions/setup-node@v4
-        with:
-          node-version: 18.18.2
-
-      - name: Install dependencies
-        run: npm ci
-
-      - name: Run DB Tests
+      - name: Checkout
+        uses: actions/checkout@v6
+      # Install npm dependencies, cache them correctly
+      # and run all Cypress tests
+      - name: Cypress run
         uses: cypress-io/github-action@v6
         with:
-          command: npm run test:dbfile
-
-  login-run:
+         command:npm run test:dbfile
+  cypress-run2:
     runs-on: ubuntu-24.04
-
     steps:
-      - uses: actions/checkout@v4
-
-      - name: Setup Node.js
-        uses: actions/setup-node@v4
-        with:
-          node-version: 18.18.2
-
-      - name: Install dependencies
-        run: npm ci
-
-      - name: Run Login Tests
+      - name: Checkout
+        uses: actions/checkout@v6
+      # Install npm dependencies, cache them correctly
+      # and run all Cypress tests
+      - name: Cypress run
         uses: cypress-io/github-action@v6
         with:
-          command: npm run test:login
+         command:npm run test:login
