@@ -6,6 +6,7 @@ describe("Use DB Fixture Anywhere", () => {
       const emp = employees[0]
       cy.log(emp.id)
       cy.log(emp.salary)
+      cy.log(emp.salary)
       cy.log(emp.department)
     })
   })
